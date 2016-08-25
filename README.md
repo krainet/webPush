@@ -1,4 +1,4 @@
-Welcome webPush!
+Welcome webPush! ![webPush Screenshot](screenshots/home.png)
 ===================
 
 
