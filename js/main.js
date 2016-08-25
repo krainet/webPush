@@ -4,8 +4,6 @@
 
 $("#sendPush").click(function() {
 
-    console.log('Click button');
-
     var postData = {
         action : 'send_push',
         title : $('#inputNotiTitle').val(),

@@ -18,20 +18,14 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelector("#enablepush").addEventListener('click', function(e) {
-                console.log('clico');
                 if(Notification.permission !== 'granted') {
-                    console.log('sin permisos');
                     Notification.requestPermission().then(function(permission) {
-                        console.log(permission);
                         if(permission === 'granted' && 'serviceWorker' in navigator) {
-                            console.log('llegamos');
                             navigator.serviceWorker.register('mqworker.js').then(initialiseState);
                         } else {
                             console.log('service worker not present');
                         }
                     });
-                }else{
-                    console.log('tienes permisos');
                 }
             });
             //get subscription token if already subscribed
@@ -120,7 +114,7 @@
                         </div>
 
 
-                        <button id="enablepush" class="btn btn-primary">Activate push Notifications</button><br />
+                        <button type="button" id="enablepush" class="btn btn-primary">Activate push Notifications</button><br />
                     </form>
                 </div>
 
