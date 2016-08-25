@@ -1,0 +1,12 @@
+{
+  "name": "webPUSH for MeQuedoUno",
+  "short_name": "MQ1WebPush",
+  "icons": [{
+        "src": "images/mqu_logo.png",
+        "sizes": "200x200",
+        "type": "image/png"
+      }],  
+  "start_url": "/index.html",
+  "display": "standalone",  
+  "gcm_sender_id": "your_sender_id_here" // Setup your API project id (aka sender_id)
+}
