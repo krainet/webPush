@@ -10,7 +10,7 @@ You can also control the content push from the example of the auxiliary API.
 
 
 
-![webPush Screenshot](screenshots/home.png)
+![webPush Screenshot](screenshots/message.png)
 ----------
 
 
